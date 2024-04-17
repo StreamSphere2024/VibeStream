@@ -36,3 +36,90 @@
     transform: rotate(360deg);
   }
 }
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 水平居中 */
+  justify-content: center; /* 如需垂直居中也可添加此属性 */
+  height: 100vh; /* 可选：使div高度填满视口高度 */
+}
+
+h1 {
+  text-align: center; /* 确保文本自身居中，适用于内联元素或文本行 */
+}
+/* 如果这是针对特定页面或区域，使用更具体的类名 */
+
+
+button {
+  background-color: #0275d8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0256b3;
+}
+
+/* App.css 或 Home.css */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 创建三列，每列大小相同 */
+  gap: 20px; /* 网格间隙 */
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/*4.16*/
+/* App.css 或 Home.css */
+.link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* 水平居中 */
+  gap: 10px; /* 按钮之间的间隔 */
+}
+
+/* App.css 或 Home.css */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 创建三列，每列大小相同 */
+  gap: 20px; /* 网格间隙 */
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* App.css */
+@media (max-width: 768px) {
+  .link-container {
+    flex-direction: column;
+  }
+}
+
+/* App.css */
+/*.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; /* 使容器至少填满整个视口高度
+}
+.home-container h1 {
+  text-align: center;
+}*/
+
